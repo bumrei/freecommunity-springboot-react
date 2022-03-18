@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 
+    <!-- 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
 </head>
-<body>
+<body><!-- 합쳐지고 최소화된 최신 CSS -->
 <!-- HEADER -->
 <div th:insert="common/header.html" id="header"></div>
 
-<a th:href="@{/post}">글쓰기</a>
+<a class="btn btn-primary float-right" th:href="@{/post}">글쓰기</a>
 
-<table>
+<table class="table">
     <thead>
     <tr>
         <th class="one wide">번호</th>
@@ -44,5 +48,8 @@
 
 <!-- FOOTER -->
 <div th:insert="common/footer.html" id="footer"></div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 </body>
 </html>
